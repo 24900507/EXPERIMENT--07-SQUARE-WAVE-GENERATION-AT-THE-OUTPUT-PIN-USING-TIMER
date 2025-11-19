@@ -366,36 +366,38 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
-<img width="1034" height="507" alt="Screenshot 2025-10-24 131852" src="https://github.com/user-attachments/assets/041dc66d-7430-4631-a304-b03205ccab89" />
+<img width="1112" height="680" alt="Screenshot 2025-11-20 at 12 10 05 AM" src="https://github.com/user-attachments/assets/67a6bce6-bd9f-4375-bb17-000c6b0dc9ec" />
+
 ```
-TON = 1.4 x 20 x 10^-6
-    = 0.000028
-TOFF= 0.000028
+TON = 3 x 10 x 10^-6
+    = 0.00003
+TOFF=0.00003
 TOTAL TIME = TON + TOFF
-           = 0.000028 + 0.000028
-           = 0.000056
+           = 0.00003+0.00003 
+           = 0.00006
 FREQUENCY = 1/(TOTAL TIME) 
-          = 1/0.000056
-          = 17857.143
+          =1/0.00006 
+          = 16666.7
 DUTY CYCLE = TON /(TON+TOFF)
-           = 0.000028/0.000056
+           = 0.00003/0.00006
            = 0.5
       IN % =0.5*100 
            = 50 %
 ```
 
 FOR PULSE AT 700
-<img width="1033" height="509" alt="Screenshot 2025-10-24 131957" src="https://github.com/user-attachments/assets/404f0875-ea4b-4f2b-bc23-b32e8f0d48bf" />
+<img width="1118" height="678" alt="Screenshot 2025-11-20 at 12 10 47 AM" src="https://github.com/user-attachments/assets/0988c4c5-7c9f-47a1-b491-8783405cd0f3" />
 
 ```
-TON = 2.1 x 20 x 10^-6
-    = 0.000042
-TOFF = 0.000014
+TON = 4 x 10 x 10^-6
+    = 0.00004
+TOFF= 2 x 10 x 10^-6
+    = 0.00002
 TOTAL TIME = TON + TOFF
-           = 0.000042 + 0.000014
-           = 0.000056
+           = 0.00004+0.00002
+           = 0.00006
 FREQUENCY = 1/(TOTAL TIME)
-          = 
+          = 16666.7
 DUTY CYCLE = TON /(TON+TOFF)
            = 0.00004/0.00006
            = 0.7
@@ -404,7 +406,8 @@ DUTY CYCLE = TON /(TON+TOFF)
 ```
 
 FOR PULSE AT 900
-<img width="1035" height="494" alt="Screenshot 2025-10-24 132058" src="https://github.com/user-attachments/assets/19dacb83-75e4-4b19-bd7d-6e42b9215ae0" />
+<img width="1104" height="668" alt="Screenshot 2025-11-20 at 12 11 35 AM" src="https://github.com/user-attachments/assets/295e2078-244c-4af2-9e08-940c01b95b52" />
+
 ```
 TON = 1 x 50 x 10^-6
     = 0.00005
